@@ -84,23 +84,32 @@ let word = ''
 
 // console.log("Oh, no! I ran out of life. How did I get here?")
 
-function basketball() {
+
+
+function basketball(player1, player2) {
+    // player1 and player2 are parameters, placeholders for values that will 
+    // be given when the function is called
     let player1Score = 0
-    let player2Score = 0
+    let player2Score = 0 
 
     while (player1Score < 10 && player2Score < 10) {
-        console.log(`Player 1: ${player1Score}  Player 2: ${player2Score}.`)
-        let shot = prompt("Who made that basket, 1 or 2?")
-        if (shot === '1') {
+        console.log(`${player1}: ${player1Score},  ${player2}: ${player2Score}.`)
+        let shot = prompt(`Who made that basket, ${player1} or ${player2}?`)
+        if (shot === player1) {
             player1Score += 2
-        } else if (shot === '2') {
+        } else if (shot === player2) {
             player2Score += 2
         } else {
-            alert('Invalid entry. Please enter 1 or 2.')
+            alert('Invalid entry. Please enter ${player1} or ${player2}.')
         }
     }
-    console.log(`Game over. Player 1 has ${player1Score} and Player 2 has ${player2Score}.`)
+    console.log(`Game over. ${player1} has ${player1Score} and ${player2} has ${player2Score}.`)
 }
+
+basketball('Jaylan', 'Chris')
+// "Jaylan" and "Chris" are arguments that get assigned to player1 and player2
+// while the function is running
+// placeholder -> parameter, actual -> argument
 
 function kiki() {
     let refrain = "Kiki, do you love me? Are you riding? Say you'll never ever leave from beside me."
@@ -112,4 +121,3 @@ function kiki() {
 }
 // kiki()
 // functions don't run until they are called
-basketball()
