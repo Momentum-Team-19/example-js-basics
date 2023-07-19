@@ -106,7 +106,7 @@ function basketball(player1, player2) {
     console.log(`Game over. ${player1} has ${player1Score} and ${player2} has ${player2Score}.`)
 }
 
-basketball('Jaylan', 'Chris')
+// basketball('Jaylan', 'Chris')
 // "Jaylan" and "Chris" are arguments that get assigned to player1 and player2
 // while the function is running
 // placeholder -> parameter, actual -> argument
@@ -121,3 +121,29 @@ function kiki() {
 }
 // kiki()
 // functions don't run until they are called
+
+let beastieBoys = ['MCA', 'Ad Rock', 'Mixmaster Mike']
+// array is a collection in []
+beastieBoys.push('Mike D')
+// push is how you add elements to an array
+console.log(beastieBoys)
+let lastPerson = beastieBoys.pop()
+console.log("The last person is:", lastPerson)
+// pop 
+console.log("Updated array is:", beastieBoys)
+
+let slicedArray = beastieBoys.slice(1, 3)
+// slice works like it does with strings (start, end)
+ console.log(slicedArray)
+
+let room = ['Davis', 'Jaylan', 'Gavin', 'Chris']
+// add Luke to the room and then console log room
+
+let todos = ['take a bath', 'work on calculator', 'feed the baby', 'eat dinner', 'go outside']
+
+for (let todo of todos) {
+    console.log(todos.indexOf(todo), todo)
+    // for of loops are used with arrays to loop through every item in the array and do something
+}
+
+// write a loop that says "Hello, <person>" to every person in room
